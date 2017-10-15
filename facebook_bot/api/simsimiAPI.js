@@ -47,9 +47,7 @@ module.exports = new SimsimiAPI();
     }
 
     getMessage(text) {
-        // Hot fix, remove this later
-        // return Promise.resolve("Hôm nay bot mệt, nghỉ tạm. Hôm khác nói chuyện nhé.");
-        
+       
         return new Promise((resolve, reject) => {
             request({
                 url: this._url + encodeURI(text),
